@@ -16,17 +16,6 @@ import {
 export default {
     setup() {
         //setup階段在beforeCreate之前
-        const time = ref("");
-
-        const getTime = () => {
-            const timeString = new Date().toLocaleTimeString("en-US");
-            time.value = timeString;
-        };
-
-        const getNowTime = () => {
-            getTime();
-        };
-
         console.log("setup");
 
         onBeforeMount(() => {
@@ -53,6 +42,17 @@ export default {
         onUnmounted(() => {
             console.log("onUnmounted");
         });
+
+        const time = ref("");
+
+        const getTime = () => {
+            const timeString = new Date().toLocaleTimeString("en-US");
+            time.value = timeString;
+        };
+
+        const getNowTime = () => {
+            getTime();
+        };
 
         return { time, getNowTime };
     },

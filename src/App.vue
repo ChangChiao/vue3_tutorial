@@ -22,7 +22,7 @@ export default {
             "ComputedDemo",
             "WatchDemo",
             "StoreDemo",
-            "SlotDemo",
+            "ProvideDemo",
             "Teleport",
             "Suspense",
             "CssInjection",

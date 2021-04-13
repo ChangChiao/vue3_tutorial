@@ -3,7 +3,7 @@ import Basic from "../views/Basic.vue";
 import CssInjection from "../views/CssInjection.vue";
 import EmitDemo from "../views/EmitDemo.vue";
 import LifeCycle from "../views/LifeCycle.vue";
-import SlotDemo from "../views/SlotDemo.vue";
+import ProvideDemo from "../views/ProvideDemo.vue";
 import WatchDemo from "../views/WatchDemo.vue";
 import Suspense from "../views/Suspense.vue";
 import ToRefsDemo from "../views/ToRefsDemo.vue";
@@ -41,9 +41,9 @@ const routes = [
         component: PropsDemo,
     },
     {
-        path: "/SlotDemo",
-        name: "SlotDemo",
-        component: SlotDemo,
+        path: "/ProvideDemo",
+        name: "ProvideDemo",
+        component: ProvideDemo,
     },
     {
         path: "/WatchDemo",
