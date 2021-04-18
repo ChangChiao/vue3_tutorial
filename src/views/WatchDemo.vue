@@ -29,7 +29,7 @@ export default {
         });
 
         watch([count2, count3], (newVal2, newVal3) => {
-            console.log("尾數為6!", newVal2, newVal3);
+            console.log("觸發同一個fn!", newVal2, newVal3);
         });
 
         // watch(count3, (count, prevCount) => {
@@ -52,9 +52,18 @@ export default {
         });
 
         const stop = watchEffect(() => {
-            console.log("count1 change!", count1.value);
+            console.warn("count1 change!", count1.value);
             if (count1.value >= 10) stop();
         });
+
+        // watchEffect((onInvalidate) => {
+        //     //step2
+        //     console.warn("count1 change!", count1.value);
+        //     onInvalidate(() => {
+        //         //step1
+        //         console.warn("onInvalidate is triggered");
+        //     });
+        // });
 
         onMounted(() => {
             setInterval(() => {

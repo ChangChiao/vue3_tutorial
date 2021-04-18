@@ -13,7 +13,10 @@
 <script>
 import { onMounted, reactive, ref } from "vue";
 export default {
-    setup() {
+    setup(props, context) {
+        console.log("props", props);
+        console.log("context", context);
+
         const textInput = ref(null); //dom
         const count = ref(0);
         const memberInfo = reactive({
@@ -31,7 +34,7 @@ export default {
         };
 
         onMounted(() => {
-            console.log("textInput", textInput);
+            // console.log("textInput", textInput);
             setTimeout(() => {
                 textInput.value.value = "";
             }, 3000);

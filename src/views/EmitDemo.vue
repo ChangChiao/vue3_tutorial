@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import EmitDemoChild from "@/views/EmitDemoChild";
+import EmitDemoChild from "@/components/EmitDemoChild";
 import { ref } from "vue";
 export default {
     components: {

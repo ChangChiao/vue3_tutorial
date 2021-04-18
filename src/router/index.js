@@ -14,6 +14,7 @@ import ComputedDemo from "../views/ComputedDemo.vue";
 import RefDemo from "../views/RefDemo.vue";
 import ReactiveDemo from "../views/ReactiveDemo";
 import RefCompare from "../views/RefCompare.vue";
+import Composition from "../views/Composition.vue";
 const routes = [
     {
         path: "/",
@@ -89,6 +90,11 @@ const routes = [
         path: "/RefCompare",
         name: "RefCompare",
         component: RefCompare,
+    },
+    {
+        path: "/Composition",
+        name: "Composition",
+        component: Composition,
     },
 ];
 

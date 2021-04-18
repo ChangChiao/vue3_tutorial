@@ -8,7 +8,7 @@
     <button @click="updateArr">replace</button>
 </template>
 <script>
-import { reactive } from "@vue/reactivity";
+import { reactive } from "vue";
 export default {
     setup() {
         const arr = reactive(["nike", "puma", "adidas"]);

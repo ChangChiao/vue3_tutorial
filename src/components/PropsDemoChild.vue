@@ -1,6 +1,6 @@
 <template>
-    <h2>{{ props.count }}</h2>
-    <button @click="props.handleClick">add count</button>
+    <h2>{{ count }}</h2>
+    <button @click="handleClick">add count</button>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
         handleClick: Function,
     },
     setup(props) {
-        return { props };
+        console.log("props", props);
     },
 };
 </script>

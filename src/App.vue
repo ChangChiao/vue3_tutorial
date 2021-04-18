@@ -25,6 +25,7 @@ export default {
             "ProvideDemo",
             "Teleport",
             "Suspense",
+            "Composition",
             "CssInjection",
         ]);
         return { menu };

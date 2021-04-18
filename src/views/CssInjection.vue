@@ -41,7 +41,4 @@ setBg();
     margin: auto;
     background-color: v-bind(bgColor);
 }
-body {
-    background-color: v-bind(bgColor);
-}
 </style>
